@@ -14,21 +14,49 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cabin" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
 <style>
 table {
-    font-family: arial, sans-serif;
+    font-family: Cabin;
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
+    margin-left:15%; 
+    margin-right:15%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #f2f2f2;
+}
+
+h1 {
+	font-family: Cabin;
+	font-size: 42px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align: center;
+}
+
+p {
+	font-family: Lato;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
 </style>
 <title>Mobile Billing Calculator</title>
@@ -86,11 +114,13 @@ tr:nth-child(even) {
 	}
 	%>
 	
+	<h1>Mobile Bill</h1>
+	
 	<table>
-		<tr>
-			<th>Telephone Number</th>
-			<th>Time spent (Minute)</th>
-			<th>Net payable</th>
+		<tr bgcolor = "#9999ff">
+			<th><h3>Telephone Number</h3></th>
+			<th><h3>Time spent (Minute)</h3></th>
+			<th><h3>Net payable</h3></th>
 		</tr>
 		<%
 		for(int i = 0 ; i < arr_info.length() ; i++) {
@@ -102,6 +132,6 @@ tr:nth-child(even) {
 		}
 		%>
 	</table>
-	
+	<p align = "center">Niwat Kaewkert || Assignment test from MFEC.</p><br>
 </body>
 </html>
